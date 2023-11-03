@@ -12,7 +12,6 @@ import RegistryOfPets.Animals.PetAnimals.PetsBase;
 public class Program implements Controller {
 
     private Animal animal;
-    private Counter counter;
     private PetsBase petsBase = new PetsBase();
     private PackBase packsBase = new PackBase();
 
@@ -24,7 +23,6 @@ public class Program implements Controller {
         System.out.println("1. Добавить новое животное");
         System.out.println("2. Обучить команде");
         System.out.println("3. Показать все команды");
-        // System.out.println("4. Вывести список животных"); //
         System.out.println("0. Выход");
     }
 
@@ -44,7 +42,7 @@ public class Program implements Controller {
                     String animalName = "";
                     System.out.println("Введите вид домашнего животного");
                     System.out.println("dog, cat, hamster");
-                    String petType = readData();
+                    // String petType = readData();
 
                     if (checkType(readData(), animalType) == false) {
                         flag = false;
@@ -62,7 +60,7 @@ public class Program implements Controller {
                     String animalName = "";
                     System.out.println("Введите вид вьючного животного");
                     System.out.println("camel, donkey, horse");
-                    String packType = readData();
+                    // String packType = readData();
 
                     if (checkType(readData(), animalType) == false) {
                         flag = false;
@@ -78,7 +76,9 @@ public class Program implements Controller {
                 }
             } else {
                 flag = false;
-            }flag=true;
+            }
+            flag=true;
+            
         }
     }
     public String readDate(){
