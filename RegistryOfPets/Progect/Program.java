@@ -42,8 +42,7 @@ public class Program implements Controller {
                     String animalName = "";
                     System.out.println("Введите вид домашнего животного");
                     System.out.println("dog, cat, hamster");
-                    // String petType = readData();
-
+                    
                     if (checkType(readData(), animalType) == false) {
                         flag = false;
                     } else {
@@ -60,8 +59,7 @@ public class Program implements Controller {
                     String animalName = "";
                     System.out.println("Введите вид вьючного животного");
                     System.out.println("camel, donkey, horse");
-                    // String packType = readData();
-
+                    
                     if (checkType(readData(), animalType) == false) {
                         flag = false;
                     } else {
